@@ -15,7 +15,8 @@
 void QEI_vInit(void);
 T_U16 QEI_u16getCount(void);
 void QEI_vResetCount(void);
-
+T_S16 QEI_s16getElapsed(void);
+T_F16 QEI_u16getElapsedCm(void);
 
 #endif	/* MCAL_ENCODER_H */
 

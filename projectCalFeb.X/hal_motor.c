@@ -13,7 +13,8 @@ void vSetMotorDir(T_U8 u8Dir)
 }
 void vSetMotorSpeed(T_U8 u8Speed)
 {
-	if(u8Speed>100) u8Speed=100;
+	if(u8Speed>100) 
+        u8Speed=100;
 	PWM1_vSetDuty(u8Speed,2);
 	
 }

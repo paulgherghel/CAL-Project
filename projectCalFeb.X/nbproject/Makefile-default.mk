@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=hal_linefollower.c hal_motor.c hal_servomotor.c main.c mcal_adc.c mcal_encoder.c mcal_gpio.c mcal_init.c mcal_interrupts.c mcal_osc.c mcal_pwm.c mcal_spi.c mcal_timers.c newmainXC16.c sys_schedule.c sys_tasks.c hal_battery.c
+SOURCEFILES_QUOTED_IF_SPACED=hal_linefollower.c hal_motor.c hal_servomotor.c main.c mcal_adc.c mcal_encoder.c mcal_gpio.c mcal_init.c mcal_interrupts.c mcal_osc.c mcal_pwm.c mcal_spi.c mcal_timers.c sys_schedule.c sys_tasks.c hal_battery.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/hal_linefollower.o ${OBJECTDIR}/hal_motor.o ${OBJECTDIR}/hal_servomotor.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcal_adc.o ${OBJECTDIR}/mcal_encoder.o ${OBJECTDIR}/mcal_gpio.o ${OBJECTDIR}/mcal_init.o ${OBJECTDIR}/mcal_interrupts.o ${OBJECTDIR}/mcal_osc.o ${OBJECTDIR}/mcal_pwm.o ${OBJECTDIR}/mcal_spi.o ${OBJECTDIR}/mcal_timers.o ${OBJECTDIR}/newmainXC16.o ${OBJECTDIR}/sys_schedule.o ${OBJECTDIR}/sys_tasks.o ${OBJECTDIR}/hal_battery.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/hal_linefollower.o.d ${OBJECTDIR}/hal_motor.o.d ${OBJECTDIR}/hal_servomotor.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/mcal_adc.o.d ${OBJECTDIR}/mcal_encoder.o.d ${OBJECTDIR}/mcal_gpio.o.d ${OBJECTDIR}/mcal_init.o.d ${OBJECTDIR}/mcal_interrupts.o.d ${OBJECTDIR}/mcal_osc.o.d ${OBJECTDIR}/mcal_pwm.o.d ${OBJECTDIR}/mcal_spi.o.d ${OBJECTDIR}/mcal_timers.o.d ${OBJECTDIR}/newmainXC16.o.d ${OBJECTDIR}/sys_schedule.o.d ${OBJECTDIR}/sys_tasks.o.d ${OBJECTDIR}/hal_battery.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/hal_linefollower.o ${OBJECTDIR}/hal_motor.o ${OBJECTDIR}/hal_servomotor.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcal_adc.o ${OBJECTDIR}/mcal_encoder.o ${OBJECTDIR}/mcal_gpio.o ${OBJECTDIR}/mcal_init.o ${OBJECTDIR}/mcal_interrupts.o ${OBJECTDIR}/mcal_osc.o ${OBJECTDIR}/mcal_pwm.o ${OBJECTDIR}/mcal_spi.o ${OBJECTDIR}/mcal_timers.o ${OBJECTDIR}/sys_schedule.o ${OBJECTDIR}/sys_tasks.o ${OBJECTDIR}/hal_battery.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/hal_linefollower.o.d ${OBJECTDIR}/hal_motor.o.d ${OBJECTDIR}/hal_servomotor.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/mcal_adc.o.d ${OBJECTDIR}/mcal_encoder.o.d ${OBJECTDIR}/mcal_gpio.o.d ${OBJECTDIR}/mcal_init.o.d ${OBJECTDIR}/mcal_interrupts.o.d ${OBJECTDIR}/mcal_osc.o.d ${OBJECTDIR}/mcal_pwm.o.d ${OBJECTDIR}/mcal_spi.o.d ${OBJECTDIR}/mcal_timers.o.d ${OBJECTDIR}/sys_schedule.o.d ${OBJECTDIR}/sys_tasks.o.d ${OBJECTDIR}/hal_battery.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/hal_linefollower.o ${OBJECTDIR}/hal_motor.o ${OBJECTDIR}/hal_servomotor.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcal_adc.o ${OBJECTDIR}/mcal_encoder.o ${OBJECTDIR}/mcal_gpio.o ${OBJECTDIR}/mcal_init.o ${OBJECTDIR}/mcal_interrupts.o ${OBJECTDIR}/mcal_osc.o ${OBJECTDIR}/mcal_pwm.o ${OBJECTDIR}/mcal_spi.o ${OBJECTDIR}/mcal_timers.o ${OBJECTDIR}/newmainXC16.o ${OBJECTDIR}/sys_schedule.o ${OBJECTDIR}/sys_tasks.o ${OBJECTDIR}/hal_battery.o
+OBJECTFILES=${OBJECTDIR}/hal_linefollower.o ${OBJECTDIR}/hal_motor.o ${OBJECTDIR}/hal_servomotor.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcal_adc.o ${OBJECTDIR}/mcal_encoder.o ${OBJECTDIR}/mcal_gpio.o ${OBJECTDIR}/mcal_init.o ${OBJECTDIR}/mcal_interrupts.o ${OBJECTDIR}/mcal_osc.o ${OBJECTDIR}/mcal_pwm.o ${OBJECTDIR}/mcal_spi.o ${OBJECTDIR}/mcal_timers.o ${OBJECTDIR}/sys_schedule.o ${OBJECTDIR}/sys_tasks.o ${OBJECTDIR}/hal_battery.o
 
 # Source Files
-SOURCEFILES=hal_linefollower.c hal_motor.c hal_servomotor.c main.c mcal_adc.c mcal_encoder.c mcal_gpio.c mcal_init.c mcal_interrupts.c mcal_osc.c mcal_pwm.c mcal_spi.c mcal_timers.c newmainXC16.c sys_schedule.c sys_tasks.c hal_battery.c
+SOURCEFILES=hal_linefollower.c hal_motor.c hal_servomotor.c main.c mcal_adc.c mcal_encoder.c mcal_gpio.c mcal_init.c mcal_interrupts.c mcal_osc.c mcal_pwm.c mcal_spi.c mcal_timers.c sys_schedule.c sys_tasks.c hal_battery.c
 
 
 CFLAGS=
@@ -185,13 +185,6 @@ ${OBJECTDIR}/mcal_timers.o: mcal_timers.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcal_timers.c  -o ${OBJECTDIR}/mcal_timers.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcal_timers.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/mcal_timers.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/newmainXC16.o: newmainXC16.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newmainXC16.o.d 
-	@${RM} ${OBJECTDIR}/newmainXC16.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  newmainXC16.c  -o ${OBJECTDIR}/newmainXC16.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/newmainXC16.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
-	@${FIXDEPS} "${OBJECTDIR}/newmainXC16.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/sys_schedule.o: sys_schedule.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/sys_schedule.o.d 
@@ -304,13 +297,6 @@ ${OBJECTDIR}/mcal_timers.o: mcal_timers.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/mcal_timers.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcal_timers.c  -o ${OBJECTDIR}/mcal_timers.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/mcal_timers.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/mcal_timers.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
-${OBJECTDIR}/newmainXC16.o: newmainXC16.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/newmainXC16.o.d 
-	@${RM} ${OBJECTDIR}/newmainXC16.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  newmainXC16.c  -o ${OBJECTDIR}/newmainXC16.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/newmainXC16.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
-	@${FIXDEPS} "${OBJECTDIR}/newmainXC16.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/sys_schedule.o: sys_schedule.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 

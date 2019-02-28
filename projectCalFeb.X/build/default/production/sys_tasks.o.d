@@ -14,4 +14,6 @@ mcal_timers.h  \
  mcal_encoder.h  \
 hal_servomotor.h  \
 hal_motor.h  \
-hal_battery.h 
+hal_battery.h  \
+ hal_linefollower.h  \
+sys_schedule.h 

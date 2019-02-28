@@ -1,6 +1,5 @@
 #include "mcal_encoder.h"
-
-
+T_S16 impulseCount;
 /*******************************************************************************
 *  Function name    : Encoder_vInit
 *  Description      : 1)Initializes the QEI(Quadrature Encoder Interface)
@@ -53,5 +52,17 @@ T_U16 QEI_u16getCount()
 void QEI_vResetCount()
 {
     POS1CNT=32000;
+}
+
+T_S16 QEI_s16getElapsed()
+{
+    impulseCount = QEI_u16getCount();
+    QEI_vResetCount();
+    return (32000 - impulseCount);
+}
+
+T_F16 QEI_u16getElapsedCm()
+{
+    return (QEI_s16getElapsed()/100);
 }
 
